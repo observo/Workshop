@@ -1,0 +1,54 @@
+<template>
+  <!-- Banner -->
+  <ParallaxStyle1
+    ids="iq-home"
+    class-names="iq-banner-02 no-before overview-block-pt iq-bg-over iq-over-black-60 iq-parallax"
+    :bg-image="require('../../assets/images/bg/01.jpg')"
+  >
+    <div class="container">
+      <div class="banner-text text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class=" iq-font-white iq-tw-8">
+              Sofbox <span class="iq-font-blue">Landing Template</span>
+            </h1>
+            <p class="iq-font-white iq-pt-15 iq-mb-20 iq-mlr-100 iq-plr-50">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley,
+            </p>
+            <a href="javascript:void(0)" class="button bt-black iq-mt-10 iq-mb-50">Download</a>
+          </div>
+          <div class="col-md-12">
+            <iframe class="banner-video" src="https://www.youtube.com/embed/kzyFmrFky7Y?rel=0&amp;showinfo=0&amp;autoplay=1&loop=3&autopause=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-objects">
+      <span class="banner-objects-01" data-bottom="transform:translatey(50px)" data-top="transform:translatey(-50px);">
+        <img :src="require('../../assets/images/drive/03.png')" alt="drive02">
+      </span>
+      <span class="banner-objects-02 iq-fadebounce">
+        <span class="iq-round" />
+      </span>
+      <span class="banner-objects-03 iq-fadebounce">
+        <span class="iq-round" />
+      </span>
+      <span class="banner-objects-04" data-bottom="transform:translatex(100px)" data-top="transform:translatex(-100px);">
+        <img :src="require('../../assets/images/drive/04.png')" alt="drive02">
+      </span>
+    </div>
+  </ParallaxStyle1>
+  <!-- Banner End -->
+</template>
+
+<script>
+import ParallaxStyle1 from '../sofbox/Parallax/ParallaxStyle1'
+export default {
+  name: 'Home',
+  components: { ParallaxStyle1 }
+}
+</script>
+
+<style scoped>
+
+</style>

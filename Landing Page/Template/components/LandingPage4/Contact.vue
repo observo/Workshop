@@ -1,0 +1,23 @@
+<template>
+  <!--Contact-->
+  <section id="contact" class="overview-block-ptb blue-bg text-center iq-font-white ">
+    <div class="container">
+      <h2 class="iq-tw-6 iq-pb-20 iq-font-white">
+        Get Started Today
+      </h2>
+      <p>Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+      <a href="javascript:void(0)" class="button bt-black iq-mt-10">Let's Started</a>
+    </div>
+  </section>
+  <!--Contact end-->
+</template>
+
+<script>
+export default {
+  name: 'Contact'
+}
+</script>
+
+<style scoped>
+
+</style>

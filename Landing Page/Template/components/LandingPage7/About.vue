@@ -1,0 +1,96 @@
+<template>
+    <div>
+        <!-- How it works ? -->
+        <section id="how-it-works" class="overview-block-ptb it-works re4-mt-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="heading-title">
+                            <h3 class="title iq-tw-7">How it works ?</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-3" v-for="(card,index) in cardData" :key="index">
+                        <div class="iq-works-box round-icon text-center">
+                            <div class="icon-bg center-block"><i aria-hidden="true" :class="card.icon"></i></div>
+                            <h5 class="iq-tw-7 iq-mt-25 iq-mb-15">{{ card.title }}</h5>
+                            <p>{{ card.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How it works ? END -->
+
+        <!-- What is Sofbox ? -->
+        <section id="how-works" class="overview-block-ptb how-works r-mt-40">
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-6">
+                <div class="heading-title left text-left">
+                <h3 class="iq-tw-7 iq-mb-25 title">What is Sofbox ?</h3>
+                </div>
+                <p class="iq-font-15">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <p class="iq-font-15 iq-mt-20">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <h6 class="iq-tw-6 iq-mt-25">Discover our best ever services.</h6>
+                <a href="javascript:void(0)" class="button iq-mt-10">Click Here</a>
+            </div>
+            <div class="col-lg-6 align-self-center">
+                <img class="iq-works-img" :src="require('../../assets/images/drive/01.png')" alt="drive01">
+            </div>
+            </div>
+        </div>
+        <div class="iq-objects">
+            <span class="iq-objects-01">
+            <img :src="require('../../assets/images/drive/02.png')" alt="drive02">
+            </span>
+            <span class="iq-objects-02" data-bottom="transform:translatey(50px)" data-top="transform:translatey(-100px);">
+            <img :src="require('../../assets/images/drive/03.png')" alt="drive02">
+            </span>
+            <span class="iq-objects-03" data-bottom="transform:translatex(50px)" data-top="transform:translatex(-100px);">
+            <img :src="require('../../assets/images/drive/04.png')" alt="drive02">
+            </span>
+            <span class="iq-objects-04 iq-fadebounce">
+            <span class="iq-round"></span>
+            </span>
+        </div>
+        </section>
+        <!-- What is Sofbox ? END -->
+
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'About',
+    data () {
+        return{
+         cardData: 
+         [
+            {
+                title: 'Fully responsive',
+                icon: 'ion-ios-monitor-outline',
+                description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+            },
+            {
+                title: 'Well documented',
+                icon: 'ion-ios-albums-outline',
+                description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+            },
+            {
+                title: 'Easy to use',
+                icon: 'ion-ios-color-wand-outline',
+                description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+            },
+            {
+                title: 'Clean codes',
+                icon: 'ion-ios-heart-outline',
+                description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+            }
+        ]
+      }
+    } 
+}
+</script>

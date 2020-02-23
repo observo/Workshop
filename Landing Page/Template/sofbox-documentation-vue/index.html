@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <!-- SITE META -->
+      <title></title>
+      <!-- BOOTSTRAP STYLES -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min-4.css">
+      <!-- TEMPLATE STYLES -->
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+      <!-- TEMPLATE STYLES -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body class="leftside">
+      <div id="loading">
+         <div id="loading-center">
+            <img src="images/loder.gif" alt="">
+         </div>
+      </div>
+      <!-- START SITE -->
+      <div id="wrapper">
+      <div class="row-offcanvas row-offcanvas-left">
+         <div id="sidebar-fix" class="sidebar-offcanvas">
+            <header id="vertical" class="header header-style-1">
+               <nav class="navbar navbar-default yamm p-0">
+                  <div class="container-f">
+                     <div class="navbar-header">
+                        <div class="site-logo text-center">
+                           <a class="navbar-brand" href="#">
+                           <img class="img-responsive p-4" src="images/logo-black.png" alt="">
+                           </a>
+                        </div>
+                     </div>
+                     <div id='cssmenu'>
+                        <ul>
+                           <li class='has-sub active'>
+                              <a href='#'><span>Introduction</span></a>
+                              <ul>
+                                 <li><a href='#basic-installation'><span>Basic Installation</span></a></li>
+                                 <li><a href='#folder-structure'><span>Folder Structure</span></a></li>
+                                 <li><a href='#sofbox-structure'><span>Sofbox custom components structure</span></a></li>
+                                 <li><a href="#basic-css">CSS Structure</a></li>
+                                 <li><a href="#basic-favicon">For Favicon icon</a></li>
+                                 <li><a href="#basic-loading">For Page Loading Transitions</a></li>
+                                 <li><a href="#basic-logo">For Logo</a></li>
+                                 <li class='last'><a href='#basic-fonts'><span>For Changing Fonts</span></a></li>
+                              </ul>
+                           </li>
+                           <li class='has-sub'>
+                              <a href='#'><span>Helper classes</span></a>
+                              <ul>
+                                 <li><a href="#basic-padding">For section padding</a></li>
+                                 <li><a href="#basic-color">For Text color</a></li>
+                                 <li><a href="#basic-background">For Background color</a></li>
+                                 <li><a href="#basic-pattern">For Background Images and pattern</a></li>
+                                 <li><a href="#basic-overlay">For Background overlay</a></li>
+                                 <li class='last'><a href='#basic-separator'>For Separator</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="#basic-components"><span>Bootstrap Components</span></a></li>
+                           <li><a href="#basic-form"><span>For Contact Form</span></a></li>
+                           <li><a href="#basic-cards"><span>For Cards</span></a></li>
+                           <li><a href="#basic-header"><span>For Header</span></a></li>
+                           <li><a href="#basic-footer"><span>For Footer</span></a></li>
+                           <li class='last'><a href='#basic-source'><span>Source & Credits</span></a></li>
+                        </ul>
+                     </div>
+                     <!--/.nav-collapse -->
+                  </div>
+                  <!--/.container-fluid -->
+               </nav>
+               <!-- end nav -->
+            </header>
+            <!-- end header -->
+         </div>
+         <!-- end sidebar -->
+         <div id="main">
+            <section class="intro-banner" style="background: url('images/bg/01.jpg'); background-size: cover; background-repeat: no-repeat;">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <a href="#"><img src="images/logo-inline.png" class="img-responsive" alt=""></a>
+                        <h1 class="text-white">USER GUIDE</h1>
+                        <p class="text-white">On behalf of iqonicthemes team, we would like to thank you for purchasing this item. Your support encourages us to build better items and continuously bring value to our products. This documentation file covers all the information needed to install and use this Template. You'll find everything you need to know to create a stunning and beautiful website in minutes.</p>
+                        <p class="text-white">Sofbox is a Vue template build with Nuxtjs based on <b>Bootstrap 4 framework</b>. This documentation will give you an understanding of how Sofbox template is structured and guide you in performing common functions. If you require further assistance not covered in this documentation, please contact us in our Support Click here to contact us</p>
+                        <ul>
+                           <li>Created: 15 July 2019</li>
+                           <li>By: iQonicthemes</li>
+                           <li>Email: <a href="mailto:design@iqonicthemes.com">design@iqonicthemes.com</a></li>
+                           <li>HelpDesk: <a target="_blank" href="http://iqonicthemes.com/">http://iqonicthemes.com/contactus</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-installation">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Basic Installation</h2>
+                        <p>Steps to be followed for getting started with the template:</p>
+                        <p>There are followings basics packages you should install before going further.</p>
+                        <ol>
+                            <li>Open terminal or CMD and go the root directory of the template</li>
+                            <li>Run in terminal or CMD: <code>npm install</code></li>
+                            <li>To Run project on Local environment run: <code>npm run dev</code></li>
+                            <li>Then visit:  <code>http://localhost:3000</code></li>
+                            <li>To Deploy project on server create production build by running: <code> npm build </code> or <code>yarn build</code></li>
+                            <li>This will generate <code>/dist</code> folder in project root directory you'll have to upload these file using a FTP on your server</li>
+                            <li>Now that you have followed these steps your basic installation is complete and ready to flaunt your site to the world.</li>
+                            <li>If you wish to <b>SSR(Universal)</b> to <b>SPA(Single Page Application)</b> then run below step.</li>
+                            <li>
+                              <pre class="prettyprint lang-html linenums">
+<b>package.json</b>
+	"scripts": {
+	  "dev": "nuxt",
+	  "build": "nuxt build",
+	  "start": "nuxt start",
+	  "generate": "nuxt generate",
+	  "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+	},
+
+<b>nuxt.config.js</b>
+	export default {
+	  mode: 'spa',
+	}
+			      </pre>
+                            </li>
+                        </ol>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="folder-structure">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Folder Structure</h2>
+                        <p>Here is the <strong>general structure of the template:</strong></p>
+                     </div>
+                  </div>
+                   <div class="row">
+                       <div class="col-md-12">
+                           <pre class="prettyprint lang-html linenums">
+sofbox-vue
+
+| - assets
+    | - app
+       | - app.css
+       | - app.js
+    | - css
+    | - fonts
+    | - images
+    | - js
+    | - plugin
+    | - video
+
+| - components
+    | - LandingPage1
+    | - LandingPage2
+    | - LandingPage3
+    | - LandingPage4
+    | - LandingPage5
+    | - LandingPage6
+    | - LandingPage7
+    | - LandingPage8
+    | - LandingPage9
+    | - sofbox
+
+| - Layouts
+      - default.vue
+      - LandingPage1.vue
+      - LandingPage2.vue
+      - LandingPage3.vue
+      - LandingPage4.vue
+      - LandingPage5.vue
+      - LandingPage6.vue
+      - LandingPage7.vue
+      - LandingPage8.vue
+      - LandingPage9.vue
+| - middleware
+| - pages
+    | - landing-page-1
+    | - landing-page-2
+    | - landing-page-3
+    | - landing-page-4
+    | - landing-page-5
+    | - landing-page-6
+    | - landing-page-7
+    | - landing-page-8
+    | - landing-page-9
+| - plugins
+| - static
+  - eslintrc.js
+  - jsconfig.json
+  - nuxt.config.js
+  - package.json
+  - README.md</pre>
+                       </div>
+                   </div>
+               </div>
+            </section>
+             <section id="sofbox-structure">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h2 class="heading-title">Sofbox custom components structure</h2>
+                             <p>Here is the general structure of the sofbox custom components:</p>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-md-12">
+                           <pre class="prettyprint lang-html linenums">
+&lt;!-- Sofbox components --&gt;
+
+| - components
+    | - sofbox
+        | - Card
+            | - CardStyle1.vue
+            | - CardStyle2.vue
+            | - CardStyle3.vue
+            | - CardStyle4.vue
+            | - CardStyle5.vue
+            | - CardStyle6.vue
+            | - CardStyle7.vue
+            | - CardStyle8.vue
+            | - CardStyle9.vue
+            | - FancyCard.vue
+            | - PricingCardStyle1.vue
+            | - PricingCardStyle2.vue
+            | - PricingCardStyle3.vue
+        | - ContactForm
+            | - ContactForm.vue
+        | - Parallax
+            | - ParallaxStyle1.vue
+            | - ParallaxVideoStyle.vue
+        | - Partials
+            | - Footer
+            | - FooterComponents
+            | - Header
+            | - Topbar
+        | - Sections
+            | - AnimationSection.vue
+            | - BannerStyle1.vue
+            | - SectionStyle.vue
+            | - SectionStyle1.vue
+            | - SectionStyle2.vue
+            | - SectionStyle6.vue
+    | - AnimateShape.vue
+    | - ColorCustomizer.vue
+    | - Loader.vue
+    | - ScrollTop.vue</pre>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+            <section id="basic-css">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">CSS Structure</h2>
+                        <p>Here is the <strong>general CSS structure of the template:</strong></p>
+                        <p>We import css files in app.css</b></p>
+                        <pre class="prettyprint lang-html linenums">
+&lt;!-- assets folder --&gt;
+| - sofbox-vue
+    | - assets
+      | - app
+          | - app.css
+
+                        </pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section id="basic-favicon">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Favicon icon</h2>
+                        <p>Favicon is an icon associated with the URL that is displayed at various places, such as in a browser’s address bar or next to the site name in a bookmark list.</p>
+                        <p>You can add a Favicon to your Website using the following code:</p>
+                        <pre class="prettyprint lang-html linenums">
+
+| - sofbox-vue
+    | - static
+          - favicon.ico
+
+    | - nuxt.config.js // file content
+            link: [
+              { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            ]
+                        </pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-loading">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Page Loading Transitions</h2>
+                        <p>Page Loading Transitions are enabled by default. If you wish to disable the page loading transition you can simply delete below section</p>
+                        <pre class="prettyprint lang-html linenums">
+
+| - components
+    | - sofbox
+        | - Loader.vue
+
+            &lt;template&gt;
+                &lt;div id="loading"&gt;
+                    &lt;div id="loading-center"&gt;
+                        &lt;div id="loader"&gt;
+                            &lt;div id="cube"&gt;
+                                &lt;div id="sides"&gt;
+                                     &lt;div id="top"&gt;&lt;/div&gt;
+                                     &lt;div id="right"&gt;&lt;/div&gt;
+                                     &lt;div id="bottom"&gt;&lt;/div&gt;
+                                     &lt;div id="left"&gt;&lt;/div&gt;
+                                     &lt;div id="front"&gt;&lt;/div&gt;
+                                     &lt;div id="back"&gt;&lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/template&gt;
+
+            &lt;script&gt;
+              export default {
+                  name: 'Loader'
+              }
+            &lt;/script&gt;
+                        </pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-logo">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Logo</h2>
+                        <p>Use the header style which is in <span class="atv">components -> sofbox -> Partials -> Header</span>. Replace <span class="atv">"logo.png"</span> with your own logo image URL.</p>
+                        <pre class="prettyprint lang-html linenums">
+
+| - sofbox-vue
+    | - layouts
+        | - LandingPage.vue
+
+              &lt;HeaderStyle1 :logo-img="logo" :nav-item-list="navItems" :styled-logo="styleLogo" /&gt;
+              &lt;script&gt;
+                  import logoImg from '../assets/images/logo.png'
+              &lt;/script&gt;
+                        </pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-fonts">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Changing Fonts</h2>
+                        <p> You can add/change the site font, from all fonts used from <a href="https://www.google.com/fonts"> Google Web Font Services,</a> with the one that suits you the best. You can find the font link in <span class="atv">app.css</span> file. See example below:</p>
+                        <pre class="prettyprint lang-html linenums">
+
+| - sofbox-vue
+    | - assets
+        | - app
+            | - app.css  // file content
+        &lt;!-- Google fonts --&gt;
+        @import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:300,400,500,600,700,800,900";
+                        </pre>
+                        <br>
+                        <p>To include new font you can simply add another link like this: </p>
+                        <pre class="prettyprint lang-html linenums">
+
+| - sofbox-vue
+    | - assets
+        | - app
+            | - app.css  // file content
+
+        &lt;!-- Raleway font --&gt;
+        @import "https://fonts.googleapis.com/css?family=Raleway:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i";
+
+        &lt;!-- Open Sans font --&gt;
+        @import "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800";
+                        </pre>
+                        <br>
+                        <p>In order to change the fonts, you will need to edit the above links with your custom font, You can easily use <a href="https://www.google.com/fonts"> Google Web Font Services</a> if you plan to use a Google Font or remove it completely. If you plan to use a self hosted font, here is an Example of using <a href="https://css-tricks.com/snippets/css/using-font-face/">Self Hosted Fonts</a></p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="section-title">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Section Title</h2>
+                        <p>Use this sample code for page section title to keep the consistency in the title. </p>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;div class="title-box text-center"&gt;
+   &lt;span&gt;BizBag Blog&lt;/span&gt;
+   &lt;h2 class="title"&gt;Trending Topics Blog&lt;/h2&gt;
+   &lt;p class="mb-0"&gt;It is a long established fact that a reader will be distracted&lt;/p&gt;
+&lt;/div&gt;</pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-padding">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For section padding</h2>
+                        <p>You can add this helper class to set section <span class="atv">padding top 100px</span> and <span class="atv">padding bottom 100px</span>.
+                           <br> Add <span class="atv">overview-block-ptb</span> class in <span class="atv">section</span> tag. See example below:
+                        </p>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;section class=&quot;... overview-block-ptb&quot;&gt;</p>
+[YOUR CONTENT]<p>&lt;/section&gt;</pre><p> <span class="label label-danger">Note</span> Use this helper class to maintain all page section spacing. You can also use <span class="atv">overview-block-pt</span> for only padding top and <span class="atv">overview-block-pb</span> for only padding bottom. </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section  id="basic-color">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Text color</h2>
+                        <p>You can use color in the Text. simply add <span class="atv"> .main-color </span> ( or any color you want) class where you want to use. See example below: </p>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;div class=&quot;main-color&quot;&gt;
+    [YOUR TEXT CONTENT]&lt;/div&gt;</pre>
+                        <p> <span class="label label-danger">Note</span> We include 4 color helper class in our template <span class="atv">text-gray, text-black, main-color and text-white</span>. you can add unlimited color class according to your needs. </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-background">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Background color</h2>
+                        <p>You can use color in the background. simply add <span class="atv"> .white-bg</span> (or any color you want) class where you want to use. See example below: </p>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;div class=&quot;green-bg&quot;&gt;
+    [YOUR CONTENT]&lt;/div&gt;</pre>
+                        <p> <span class="label label-danger">Note</span> We include 4 background color helper class in our template <span class="atv">green-bg, grey-bg, white-bg and dark-bg</span> You can add unlimited background color class according to your needs </p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-pattern">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Background Images and pattern</h2>
+                        <p>You can use an image in the background with parallax effect by simply adding <span class="atv"> InlineStyle </span> in div tag and by use of this you can create your own background. See example below: </p>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;div style=&quot;background-image:url(Path); &quot;&gt;
+    [YOUR CONTENT]<br />&lt;/div&gt;</pre>
+                        <br>
+                        <p> If your background is small and you want to use repeated background then use styling property <span class="atv"> background-repeat </span> and set the value <span class="atv">repeat</span> or <span class="atv">no-repeat</span>. See the example below:</p>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;div style=&quot;background-image:url(Path); background-repeat:no-repeat;&quot;&gt;   [YOUR CONTENT]<br />&lt;/div&gt;</pre>
+                        <br>
+                        <p> If you want to use your background like cover or cointainer. You just need to add styling property <span class="atv"> background-size </span> and set the value <span class="atv">cover</span> or <span class="atv">cointainer</span>. see the example below:</p>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;div style=&quot;background-image:url(Path); background-size:cover;&quot;&gt;
+[YOUR CONTENT]&lt;/div&gt;</pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-overlay">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Background overlay</h2>
+                        <p>You can use these <span class="atv"> .iq-over-black-30, .iq-over-white-20, .iq-over-green-90 </span> classes to any element in your HTML code to apply overlay color on any image or section. See example below:</p>
+                        <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;div class=&quot;iq-over-black-80&quot;&gt;
+[YOUR CONTENT]<br />&lt;/div&gt;</pre>
+                        <p><strong>Structure: </strong> <span class="atv">.iq-over-{<b>color</b>}-{<b>opacity</b>}</span>. For Example, <span class="atv"> .iq-over-black-80</span></p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-separator">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Separator</h2>
+                        <p>Add this tag in your HTML code to add Separator line. Simply add <span class="atv"> hr </span> tag where you want to add the line. See example below:</p>
+                        <pre class="prettyprint lang-html linenums overflow-auto"><p>...</p>
+                            <p> [SECTION 1 CONTENT]</p>
+                            <p>...</p>
+                            <p>&lt;/section&gt; &lt;!--Section 1 End--&gt;</p>
+                            <p>  &lt;hr/&gt;</p>
+                            <p>&lt;section&gt; &lt;!--Section 2 Start--&gt;</p>
+                            <p>...</p>
+                            <p> [SECTION 2 CONTENT]</p>
+                            <p>...</p></pre>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-components">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Bootstrap Components</h2>
+                        <p>
+                            Bootstrap has wonderfull documentation on the following components::
+                        </p>
+                        <ul>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/utilities/text/#text-alignment" target="black">Text Alignments</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/components/alerts/" target="black">Alerts</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/components/badge/" target="black">Badges</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/components/carousel/" target="black">Carousel</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/layout/grid/">Columns</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/content/tables/">Tables</a>
+                           </li>
+                           <li>
+                              <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="black">Buttons</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-form">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">For Contact Form</h2>
+                        <p>Replace dummy email with your email in contact-form.php to get your contact-form working</p>
+                        <pre class="prettyprint lang-html linenums overflow-auto"><p>$ToEmail = 'demo123@gmail.com';</p></pre>
+                        <br>
+                        <p><em>Note: </em>Don't forget to change dummy <b>site-key</b> with your site-key to get your google captcha working</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-cards">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="heading-title">Card styles</h2>
+                            <p>We have build different types of stylish card components. And these are the some examples of cards</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style1</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center">
+                                <img src="./images/example-images/card-style1.png" class="img-fluid" alt="card-style1.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle1&gt;
+    &lt;div slot="cardMedia"&gt;
+      &lt;img class="img-fluid center-block" :src="require('../../assets/images/blog/02.jpg')" alt="#"&gt;
+    &lt;/div&gt;
+    &lt;div slot="cardTitle"&gt;
+      &lt;a href="javascript:void(0)"&gt;
+        &lt;h5 class="iq-tw-7 iq-mb-10"&gt;Blogpost With Image&lt;/h5&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div slot="cardBody"&gt;
+      &lt;p&gt;Quae laboriosam sunt consectetur, assumenda provident lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div slot="cardFooter"&gt;
+      &lt;ul class="list-inline"&gt;
+        &lt;li class="list-inline-item"&gt;
+          &lt;a href="javascript:void(0)"&gt;&lt;i class="fa fa-user-circle" aria-hidden="true" /&gt; Tom Herry&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="list-inline-item"&gt;
+          &lt;a href="javascript:void(0)"&gt;&lt;i class="fa fa-calendar" aria-hidden="true" /&gt; 12 Aug 2017&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="list-inline-item"&gt;
+          &lt;a href="javascript:void(0)"&gt;&lt;i class="fa fa-comment" aria-hidden="true" /&gt; 5&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/CardStyle1&gt;
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style2</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center">
+                                <img src="./images/example-images/card-style2.png" class="img-fluid" alt="card-style2.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle2&gt;
+    &lt;i class="iq-mb-10" slot="cardIcon" class="ion-ios-lightbulb-outline iq-mb-10"&gt;&lt;/i&gt;
+    &lt;h5 class="iq-tw-6" slot="cardTitle"&gt; Creative Ideas &lt;/h5&gt;
+    &lt;p slot="cardBody"&gt;
+        Text ever since the 1500s, when an unknown printer
+        took a galley of type and scrambled it to make.
+    &lt;/p&gt;
+&lt;/CardStyle2&gt;
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style3</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center pl-4">
+                                <img src="./images/example-images/card-style3.png" class="img-fluid" alt="card-style3.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle3&gt;
+  &lt;div slot="cardMedia"&gt;
+    &lt;img alt="team-1" class="img-fluid" :src="require('assets/images/team/01.jpg')"&gt;
+  &lt;/div&gt;
+  &lt;div slot="cardTitle"&gt;
+    &lt;a href="team-details-1.html"&gt;
+      &lt;h6 class="iq-font-white iq-tw-6"&gt;Elli Davis&lt;/h6&gt;
+    &lt;/a&gt;
+    &lt;span&gt;Ceo, Sofbox &lt;/span&gt;
+  &lt;/div&gt;
+  &lt;ul class="list-inline" slot="cardFooter"&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt; &lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt; &lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt; &lt;i class="fab fa-pinterest-p"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/CardStyle3&gt;
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style4</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center">
+                                <img src="./images/example-images/card-style4.png" class="img-fluid" alt="card-style4.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle4&gt;
+  &lt;i slot="cardMedia" class="ion-ios-color-wand-outline"&gt;&lt;/i&gt;
+  &lt;div slot="cardBody"&gt;
+    &lt;h5 class="iq-tw-6 iq-mb-10"&gt;Easy to use&lt;/h5&gt;
+    &lt;p&gt;Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/CardStyle4&gt;
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style5</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center p-4">
+                                <img src="./images/example-images/card-style5.png" class="img-fluid" alt="card-style5.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle5 step="2"&gt;
+  &lt;img slot="cardMedia" :src="require('assets/images/services/icon2.png')" class="img-fluid" alt="icon2.png"&gt;
+  &lt;div slot="cardBody"&gt;
+    &lt;h5 class="iq-tw-7 text-uppercase iq-mt-25 iq-mb-15"&gt;MULTIPURPOSE LAYOUT&lt;/h5&gt;
+    &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/CardStyle5&gt;
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style6</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center p-4">
+                                <img src="./images/example-images/card-style6.png" class="img-fluid" alt="card-style6.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle6&gt;
+  &lt;i aria-hidden="true" class="ion-ios-settings" slot="cardMedia"&gt;&lt;/i&gt;
+  &lt;div slot="cardBody"&gt;
+    &lt;h5 class="iq-tw-6 iq-pt-20 iq-pb-10"&gt;Color schemas&lt;/h5&gt;
+    &lt;p&gt;Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/CardStyle6&gt;
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style7</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center p-4">
+                                <img src="./images/example-images/card-style7.png" class="img-fluid" alt="card-style7.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle7&gt;
+  &lt;div slot="cardMedia"&gt;
+    &lt;img alt="#" class="img-fluid rounded-circle" :src="require('assets/images/testimonial/01.jpg')"&gt;
+  &lt;/div&gt;
+  &lt;div slot="cardHeader"&gt;
+    &lt;h5 class="iq-tw-6"&gt;Jason Adams&lt;/h5&gt;
+    &lt;span class="sub-title iq-tw-6"&gt;CEO, Sofbox&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div slot="cardBody"&gt;
+    &lt;p&gt;Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor coli incididunt ut labore.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/CardStyle7&gt;
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Card-style8</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center p-4">
+                                <img src="./images/example-images/card-style8.png" class="img-fluid" alt="card-style8.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;CardStyle8&gt;
+  &lt;img slot="cardMedia" :src="require('assets/images/team/03.jpg')" class="img-fluid center-block" alt="team-image"&gt;
+  &lt;div slot="cardHeader"&gt;
+    &lt;h5 class="iq-font-black iq-tw-6"&gt;Jason Deol&lt;/h5&gt;
+    &lt;span class="team-post iq-tw-5"&gt;Web Designer&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div slot="cardOverlay"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-google"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/CardStyle8&gt;
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-sm-12">
+                          <h4 >Card-style9</h4>
+                      </div>
+                      <div class="col-sm-4 d-flex ">
+                          <div class="justify-content-center align-self-center p-4">
+                              <img src="./images/example-images/card-style9.png" class="img-fluid" alt="card-style8.png">
+                          </div>
+                      </div>
+                      <div class="col-sm-7 ">
+                          <h6>Source code</h6>
+                          <pre class="prettyprint lang-html linenums overflow-auto">
+
+&lt;CardStyle9&gt;
+  &lt;img :src="require('./assets/images/icon/01.png')" class="img-fluid" alt="" slot="cardMedia"&gt;
+  &lt;h4 slot="cardTitle"&gt;Fully Support&lt;/h4&gt;
+  &lt;p slot="cardBody"&gt;There are many variations of passages of Lorem Ipsum available, but the have suffered in some form.&lt;/p&gt;
+&lt;/CardStyle9&gt;
+                          </pre>
+                      </div>
+                  </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Fancy-card</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center p-4">
+                                <img src="./images/example-images/fancy-card.png" class="img-fluid" alt="fancy-card.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;FancyCard
+  icon="ion-ios-monitor-outline"
+  title="High Resolution"
+  text="Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor."&gt;
+&lt;/FancyCard&gt;
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Pricing-card-style1</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center p-4">
+                                <img src="./images/example-images/pricing-card.png" class="img-fluid" alt="pricing-card.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+data (){
+  return{
+      package : {
+          title: 'Professional',
+          price: '$4.99',
+          items: [
+            { icon: 'ion-checkmark-round', title: 'Photoshop'},
+            { icon: 'ion-checkmark-round', title: 'HTML5 & CSS 3'},
+            { icon: 'ion-close-round', title: 'Wordpress'},
+            { icon: 'ion-close-round', title: 'Javascript'},
+            { icon: 'ion-close-round', title: 'Animation'}
+          ],
+          active: 1
+      }
+  }
+}
+&lt;PricingCardStyle1 :item="package" :active="package.active"&gt;
+  &lt;ul class="iq-mtb-30" slot="cardBody"&gt;
+    &lt;li class="iq-mtb-20" v-for="(item,index) in package.items":key="index"&gt;&lt;i aria-hidden="true" class="iq-mr-10": class="item.icon" &gt;&lt;/i&gt;{{ item.title }}&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;a slot="cardFooter" class="button iq-mr-0" href="#"&gt;Purchase&lt;/a&gt;
+&lt;/PricingCardStyle1&gt;
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 >Pricing-card-style2</h4>
+                        </div>
+                        <div class="col-sm-4 d-flex ">
+                            <div class="justify-content-center align-self-center p-4">
+                                <img src="./images/example-images/pricing-card-style2.png" class="img-fluid" alt="pricing-card-style2.png">
+                            </div>
+                        </div>
+                        <div class="col-sm-7 ">
+                            <h6>Source code</h6>
+                            <pre class="prettyprint lang-html linenums overflow-auto">
+ &lt;PricingCardStyle2&gt;
+    &lt;div slot="cardHeader"&gt;
+      &lt;h2 class="iq-font-white iq-tw-7"&gt;&lt;small&gt;$&lt;/small&gt;19&lt;small&gt;/Month&lt;/small&gt;&lt;/h2&gt;
+      &lt;span class="text-uppercase iq-tw-4 iq-font-white"&gt;BASIC&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;ul slot="cardList"&gt;
+      &lt;li&gt;&lt;s&gt;100 MB Disk Space&lt;/s&gt;&lt;/li&gt;
+      &lt;li&gt;2 Subdomains&lt;/li&gt;
+      &lt;li&gt;5 Email Accounts&lt;/li&gt;
+      &lt;li&gt;&lt;s&gt;Webmail Support&lt;/s&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;s&gt;Customer Support 24/7&lt;/s&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div slot="cardFooter"&gt;
+      &lt;a class="button" href="javascript:void(0)"&gt;Purchase&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/PricingCardStyle2&gt;
+                            </pre>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                      <div class="col-sm-12">
+                          <h4 >Pricing-card-style4</h4>
+                      </div>
+                      <div class="col-sm-4 d-flex ">
+                          <div class="justify-content-center align-self-center p-4">
+                              <img src="./images/example-images/pricing-card-style4.png" class="img-fluid" alt="pricing-card-style4.png">
+                          </div>
+                      </div>
+                      <div class="col-sm-7 ">
+                          <h6>Source code</h6>
+                          <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;PricingCardStyle4&gt;
+  &lt;div slot="cardIcon"&gt;
+    &lt;i aria-hidden="true" class="ion-ios-person-outline" /&gt;
+  &lt;/div&gt;
+  &lt;div slot="cardTitle"&gt;
+    &lt;h4 class="iq-tw-5"&gt;Personal&lt;/h4&gt;
+    &lt;ul slot="cardText" class="pricing-features"&gt;
+      &lt;li class="pricing-features-item"&gt;
+        Custom domains
+      &lt;/li&gt;
+      &lt;li class="pricing-features-item"&gt;
+        Sleeps after 30 mins of inactivity
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;span slot="cardPrice" class="pricing-price"&gt;Free&lt;/span&gt;
+    &lt;a slot="cardButton" class="iq-mt-40 button" href="javascript:void(0)"&gt;Purchase&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/PricingCardStyle4&gt;
+                          </pre>
+                      </div>
+                  </div>
+                </div>
+            </section>
+             <section id="basic-header">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h2 class="heading-title">Header style</h2>
+                             <p>We have build different types of stylish header components. And these are the some examples of header</p>
+                         </div>
+                     </div>
+
+                     <div class="row">
+                         <div class="col-sm-12 ">
+                             <h6>Source code</h6>
+                             <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;!--Import logo image --&gt;
+import logoImg from 'assets/images/logo.png';
+
+&lt;!--Declare variable --&gt;
+data (){
+  return{
+      navLogo: logoImg,
+
+      navItems: [
+        { href: '#iq-home', title: 'Home', active: true },
+        { href: '#how-it-works', title: 'About' },
+        { href: '#software-features', title: 'Service' },
+        { href: '#team', title: 'Team' },
+        { href: '#pricing', title: 'Pricing'},
+        { href: '#blog', title: 'Blog' },
+        { href: '#contact', title: 'Contact' }
+      ];
+  }
+}
+                            </pre>
+                         </div>
+                         <div class="col-sm-12">
+                             <h4>Header-style1</h4>
+                         </div>
+                         <div class="col-sm-12">
+                             <div class="justify-content-center align-self-center p-4">
+                                 <img src="./images/example-images/header-style1.png" class="img-fluid" alt="card-style1.png">
+                             </div>
+                         </div>
+                         <div class="col-sm-12 ">
+                             <h6>Source code</h6>
+                             <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;HeaderStyle1 :logoImg="navLogo" class-name="header-white" :navItemList="navItems"&gt;
+  &lt;TopbarStyle1 slot="topBar"&gt;
+    &lt;ul slot="leftLinks"&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fa fa-phone iq-mr-10" aria-hidden="true"&gt;&lt;/i&gt;&lt;span class="iq-font-white"&gt;+1234567890&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul slot="rightLinks"&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-pinterest"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-google-plus-g"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/TopbarStyle1&gt;
+&lt;/HeaderStyle1&gt;
+                            </pre>
+                         </div>
+                     </div>
+
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h4>Header-style2</h4>
+                         </div>
+                         <div class="col-sm-12 ">
+                             <div class="justify-content-center align-self-center p-4">
+                                 <img src="./images/example-images/header-style.png" class="img-fluid" alt="card-style1.png">
+                             </div>
+                         </div>
+                         <div class="col-sm-12 ">
+                             <h6>Source code</h6>
+                             <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;HeaderStyle1 :logoImg="navLogo" class-name="" :navItemList="navItems"&gt;
+  &lt;a href="#" class="button bt-black pull-right" slot="navContent"&gt;Download&lt;/a&gt;
+&lt;/HeaderStyle1&gt;
+                            </pre>
+                         </div>
+                     </div>
+
+                 </div>
+             </section>
+
+             <section id="basic-footer">
+                 <div class="container">
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h2 class="heading-title">Footer style</h2>
+                             <p>We have build different types of stylish footer components. And these are the some examples of footer</p>
+                         </div>
+                     </div>
+
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h4>Footer-style1</h4>
+                         </div>
+                         <div class="col-sm-12">
+                             <div class="justify-content-center align-self-center p-4">
+                                 <img src="./images/example-images/footer-style1.png" class="img-fluid" alt="footer-style1.png">
+                             </div>
+                         </div>
+                         <div class="col-sm-6 ">
+                             <h6>Source code</h6>
+                             <pre class="prettyprint lang-html linenums overflow-auto" style="max-height: 500px;overflow-y: scroll">
+&lt;!--Declare variable in typescript file --&gt;
+data (){
+  retutn{
+     footerText: [
+        {
+          icon: true,
+          iconClass: 'ion-ios-location-outline',
+          text: '1234 North Luke Lane, South Bend, IN 360001'
+        },
+        {
+          icon: true,
+          iconClass: 'ion-ios-telephone-outline',
+          text: '+0123 456 789'
+        },
+        {
+          icon: true,
+          iconClass: 'ion-ios-email-outline',
+          text: 'mail@sofbox.com'
+        }
+      ],
+
+      footerPlatform: [
+        {
+          section: [
+            {
+              href: 'javascript:void(0)',
+              title: 'Linux'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'Windows'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'Web'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'Android'
+            }
+          ]
+        }
+      ],
+
+      footerHome: [
+        {
+          section: [
+            {
+              href: 'javascript:void(0)',
+              title: 'Home'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'About us'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'Our team'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'Portfolio'
+            }
+          ]
+        }
+      ],
+
+      footerCommunity: [
+        {
+          section: [
+            {
+              href: 'javascript:void(0)',
+              title: 'Knowledge'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'Developers'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'FAQ'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'Forum'
+            }
+          ]
+        }
+      ],
+
+      footerCompany: [
+        {
+          section: [
+            {
+              href: 'javascript:void(0)',
+              title: 'About'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'Blog'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'Press'
+            },
+            {
+              href: 'javascript:void(0)',
+              title: 'Careers'
+            }
+          ]
+        }
+      ]
+  }
+}</pre>
+                         </div>
+                         <div class="col-sm-6 ">
+                             <h6>Source code</h6>
+                             <pre class="prettyprint lang-html linenums overflow-auto" style="max-height: 500px;overflow-y: scroll">
+
+&lt;FooterMain&gt;
+  &lt;div slot="footerContent"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-lg-3 col-md-6 col-sm-6 iq-mtb-20"&gt;
+        &lt;FooterLogo
+          :sectionImage="{{ navLogo }}"
+          sectionText="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        &gt;&lt;/FooterLogo&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-lg-3 col-md-6 col-sm-6 iq-mtb-20"&gt;
+        &lt;FooterAddress :addressContent="footerText"&gt;&lt;/FooterAddress&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-lg-3 col-md-6 col-sm-6 iq-mtb-20"&gt;
+        &lt;FooterLinks title="Menu" :content="footerHome"&gt;&lt;/FooterLinks&gt;
+      &lt;/div&gt;
+
+      &lt;div class="col-lg-3 col-md-6 col-sm-6 iq-mtb-20"&gt;
+        &lt;FooterLinks title="Help" :content="footerHelp"&gt;&lt;/FooterLinks&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;hr&gt;
+    &lt;FooterStyle1 :footerText="footerText" :socialNavItemList="socialNavItems"&gt;&lt;/FooterStyle1&gt;
+  &lt;/div&gt;
+&lt;/FooterMain&gt;
+                             </pre>
+                         </div>
+                     </div>
+
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h4>Footer-style2</h4>
+                         </div>
+                         <div class="col-sm-12 ">
+                             <div class="justify-content-center align-self-center p-4">
+                                 <img src="./images/example-images/footer-style2.png" class="img-fluid" alt="footer-style2.png">
+                             </div>
+                         </div>
+                         <div class="col-sm-12 ">
+                             <h6>Source code</h6>
+                             <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;FooterStyle2&gt;
+    &lt;p slot="address"&gt;1234 North Avenue Luke Lane, South Bend, IN 360001&lt;/p&gt;
+    &lt;p slot="phone"&gt;+0123 456 789
+      &lt;br&gt;Mon-Fri 8:00am - 8:00pm
+      &lt;br&gt;
+    &lt;/p&gt;
+    &lt;p slot="mail"&gt;support@sofbox.com
+      &lt;br&gt;24 X 7 online support
+      &lt;br&gt;
+    &lt;/p&gt;
+    &lt;ul slot="links"&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-google"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="javascript:void(0)"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/FooterStyle2&gt;</pre>
+                         </div>
+                     </div>
+
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h4>Footer-style3</h4>
+                         </div>
+                         <div class="col-sm-12 ">
+                             <div class="justify-content-center align-self-center p-4">
+                                 <img src="./images/example-images/footer-style3.png" class="img-fluid" alt="footer-style3.png">
+                             </div>
+                         </div>
+                         <div class="col-sm-12 ">
+                             <h6>Source code</h6>
+                             <pre class="prettyprint lang-html linenums overflow-auto">
+&lt;!-- Declare variable --&gt;
+
+data (){
+  return{
+    footerText: '© Copyright 2018 Sofbox Developed by <b>iqonicthemes</b>.',
+    socialNavItems: [
+      { href: 'javascript:void(0)', icon: '&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;' },
+      { href: 'javascript:void(0)', icon: '&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;' },
+      { href: 'javascript:void(0)', icon: '&lt;i class="fab fa-google"&gt;&lt;/i&gt;' },
+      { href: 'javascript:void(0)', icon: '&lt;i class="fab fa-github"&gt;&lt;/i&gt;' },
+    ],
+  }
+}
+
+&lt;!-- Html template --&gt;
+&lt;FooterStyle1 :footerText="footerText" :socialNavItemList="socialNavItems"&gt;&lt;/FooterStyle1&gt;</pre>
+                         </div>
+                     </div>
+
+                 </div>
+             </section>
+
+            <section id="basic-support">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Browser Support</h2>
+                        <p>Supports all major Browsers like Google Chrome, Mozilla Firefox, Safari, Opera, Internet Explorer 9 and above.</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-log">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Change Log</h2>
+                        <h4>Version 1.0</h4>
+                        <p>- Initial Release</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="basic-source">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">Source & Credits</h2>
+                        <p>All images and videos are for preview purposes only and are not included in the download files. Images are of copyrights under Creative Commons CC0.</p>
+                        <br>
+                        <h4>Images</h4>
+                        <ul>
+                           <li>bigstockphoto <a href="https://www.bigstockphoto.com/">bigstockphoto</a></li>
+                           <li>Pexels <a href="https://www.pexels.com/">Pexels</a></li>
+                           <li>freepik <a href="http://www.freepik.com/">freepik</a></li>
+                           <li>pixabay <a href="https://pixabay.com/">pixabay</a></li>
+                        </ul>
+                        <br>
+                        <br>
+                        <h4>Scripts</h4>
+                        <ul>
+                           <li><a href="https://vuejs.org">Vue JS</a></li>
+                           <li><a href="https://jquery.com/">Jquery</a></li>
+                           <li><a href="https://www.npmjs.com/package/jarallax">Parallax</a></li>
+                           <li><a href="http://www.owlcarousel.owlgraphic.com/">Owl Carousel 2</a></li>
+                           <li><a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a></li>
+                           <li><a href="https://github.com/bas2k/jquery.appear/">Jquery appear</a></li>
+                           <li><a href="https://github.com/mhuggins/jquery-countTo">Counter</a></li>
+                           <li><a href="https://github.com/glix/jQuery-Plugins/tree/master/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown">Countdown</a></li>
+                        </ul>
+                        <br>
+                        <br>
+                        <h4>CSS & Fonts</h4>
+                        <ul>
+                           <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+                           <li><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></li>
+                           <li><a href="http://ionicons.com/#cdn">ionicons</a></li>
+                           <li><a href="https://www.google.com/fonts">Google Fonts</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section id="rate-item">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h2 class="heading-title">How to rate this Template</h2>
+                        <p>Please do rate us if you like our theme and support. We look forward to your valuable review. For rating visit: <a href="http://themeforest.net/downloads">http://themeforest.net/downloads</a> and find "Rate this item" below the download button and rate out the theme. Advance Thanks in Prospect!<br>
+                        </p>
+                        <div class="rate-img"> <img src="images/rate.jpg" alt="logo"> </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <footer class="footer">
+            <div class="container">
+            <div class="row">
+            <div class="col-sm-12">
+            <p>Designed and built with love by <a href="http://iqonic.design">Iqonic Design</a></p>
+            </div>
+            </div>
+            </div>
+            </footer>
+            </div>
+         </div>
+         <!-- end main -->
+      </div>
+      <!-- end wrapper -->
+      <!-- END SITE -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/prettify.js"></script>
+      <script src="js/plugins.js"></script>
+   </body>
+</html>
